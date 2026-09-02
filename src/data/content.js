@@ -57,7 +57,13 @@ export const studioData = {
       tag: "🎬 Lead Visual Director",
       tagColor: "gold",
       bio: "Passionate videographer and editor dedicated to capturing compelling visuals and crafting engaging cinematic stories. Specializes in dynamic shots, creative composition, seamless editing, and high-impact vertical reels.",
-      skills: ["🎥 Cinematic Direction", "⚡ Advanced Video Editing", "🎨 Color Grading", "🔊 Sound Design", "📱 Viral Reel Strategy"],
+      skills: [
+        "🎥 Cinematic Direction",
+        "⚡ Advanced Video Editing",
+        "🎨 Color Grading",
+        "🔊 Sound Design",
+        "📱 Viral Reel Strategy"
+      ],
       contactUrl: "https://wa.me/917990102448?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
       buttonLabel: "🔒 VIP Direct Line (9104903595)"
     },
@@ -69,7 +75,11 @@ export const studioData = {
       tag: "🎨 Creative Lead",
       tagColor: "gold",
       bio: "Capturing moments, shaping visions, and telling compelling stories. Delivering high-impact visuals, precision video editing, and modern graphics design for brand storytelling.",
-      skills: ["🎥 Videography", "✂️ Video Editing", "🎨 Motion & Graphic Design"],
+      skills: [
+        "🎥 Videography",
+        "✂️ Video Editing",
+        "🎨 Motion & Graphic Design"
+      ],
       contactUrl: "https://wa.me/917990102448?text=Hi%20Ghanshyam,%20I%20want%20to%20collaborate%20on%20design%20and%20video%20production.",
       buttonLabel: "💬 Connect with Ghanshyam"
     },
@@ -81,7 +91,11 @@ export const studioData = {
       tag: "📈 Strategic Lead",
       tagColor: "cyan",
       bio: "Strategizing brand narratives and driving visual excellence for the next era. Focused on full-funnel marketing management, client acquisition, and strategic advisory.",
-      skills: ["📈 Marketing Strategy", "🤝 Brand Consulting", "🚀 Client Acquisition"],
+      skills: [
+        "📈 Marketing Strategy",
+        "🤝 Brand Consulting",
+        "🚀 Client Acquisition"
+      ],
       contactUrl: "https://wa.me/917990102448?text=Hi%20Ravi,%20I%20want%20to%20discuss%20brand%20strategy%20and%20marketing%20consulting.",
       buttonLabel: "💬 Connect with Ravi"
     }
@@ -133,11 +147,36 @@ export const studioData = {
   ],
 
   productionGear: [
-    { category: "Camera Systems", item: "Sony Cinema Line 4K Alpha Full-Frame", desc: "10-bit 4:2:2 S-Log3 dynamic range" },
-    { category: "Optics & Lenses", item: "Sony G-Master Fast Primes (24mm, 50mm, 85mm)", desc: "f/1.4 cinematic bokeh & macro sharpness" },
-    { category: "Stabilization", item: "DJI Ronin RS Pro Gimbal System", desc: "Silky 3-axis tracking and vertical mount" },
-    { category: "Lighting & Modifiers", item: "Aputure & Godox Studio LED Rig", desc: "Softboxes, RGB rim lights & daylight spots" },
-    { category: "Audio & Post-Production", item: "Rode Wireless PRO & DaVinci Resolve Studio", desc: "32-bit float audio & studio color grading" }
+    {
+      category: "Camera Systems",
+      item: "Sony Cinema Line 4K Alpha Full-Frame",
+      desc: "10-bit 4:2:2 S-Log3 dynamic range"
+    },
+    {
+      category: "Optics & Lenses",
+      item: "Sony G-Master Fast Primes (24mm, 50mm, 85mm)",
+      desc: "f/1.4 cinematic bokeh & macro sharpness"
+    },
+    {
+      category: "Stabilization",
+      item: "DJI Ronin RS Pro Gimbal System",
+      desc: "Silky 3-axis tracking and vertical mount"
+    },
+    {
+      category: "Lighting & Modifiers",
+      item: "Aputure & Godox Studio LED Rig",
+      desc: "Softboxes, RGB rim lights & daylight spots"
+    },
+    {
+      category: "Audio & Post-Production",
+      item: "Rode Wireless PRO & DaVinci Resolve Studio",
+      desc: "32-bit float audio & studio color grading"
+    },
+    {
+      category: "Mobile Cinema",
+      item: "iPhone Pro",
+      desc: "4K cinematic video, ProRes recording & professional mobile production"
+    }
   ],
 
   faqs: [

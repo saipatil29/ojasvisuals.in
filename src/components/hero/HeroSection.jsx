@@ -53,19 +53,6 @@ export const HeroSection = ({ onBookClick, onExploreClick }) => {
           </a>
         </div>
 
-        {/* Live Studio Metrics Bar */}
-        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl glass-panel">
-          {studioData.stats.map((stat, idx) => (
-            <div key={idx} className="flex flex-col items-center p-2">
-              <span className="font-heading font-extrabold text-2xl sm:text-3xl text-gold-light">
-                {stat.value}{stat.suffix}
-              </span>
-              <span className="text-xs text-slate-400 font-medium text-center mt-1">
-                {stat.label}
-              </span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
