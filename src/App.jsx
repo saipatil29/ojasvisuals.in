@@ -3,7 +3,6 @@ import { Navbar } from './components/common/Navbar';
 import { HeroSection } from './components/hero/HeroSection';
 import { FounderSection } from './components/about/FounderSection';
 import { ServicesSection } from './components/services/ServicesSection';
-import { PackageCalculator } from './components/services/PackageCalculator';
 import { PortfolioSection } from './components/portfolio/PortfolioSection';
 import { ProductionGear } from './components/portfolio/ProductionGear';
 import { ClientVault } from './components/vault/ClientVault';
@@ -29,7 +28,7 @@ export function App() {
   // Section Observer for active navigation highlighting
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'calculator', 'portfolio', 'gear', 'vault', 'faq', 'contact'];
+      const sections = ['hero', 'about', 'services', 'portfolio', 'gear', 'vault', 'faq', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
@@ -66,8 +65,6 @@ export function App() {
         <HeroSection />
         <FounderSection />
         <ServicesSection onSelectService={(srv) => setSelectedService(srv)} />
-        <PackageCalculator onSendQuote={() => showToast('Quote formulated! Opening WhatsApp...', 'success')} />
-        <PortfolioSection />
         <ProductionGear />
         <ClientVault onToast={showToast} />
         <FaqSection />
