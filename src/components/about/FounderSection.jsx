@@ -24,12 +24,10 @@ export const FounderSection = () => {
       ========================================= */}
       <div className="text-center mb-16">
 
-        {/* Section Label */}
         <div className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-5">
           The Minds Behind Ojas Visuals
         </div>
 
-        {/* Main Heading */}
         <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
           Leadership &amp; Core Creative Team
         </h2>
@@ -48,7 +46,6 @@ export const FounderSection = () => {
       ========================================= */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 rounded-3xl bg-gradient-to-br from-dark-800/95 via-dark-700/70 to-dark-800/95 border border-gold-primary/30 shadow-2xl shadow-black/70 relative overflow-hidden mb-12">
 
-        {/* Ambient Corner Glow */}
         <div className="absolute top-0 right-0 w-48 h-48 bg-gold-primary/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Om's Image */}
@@ -62,10 +59,8 @@ export const FounderSection = () => {
               loading="lazy"
             />
 
-            {/* Dark Gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-dark-900/20 to-transparent pointer-events-none" />
 
-            {/* Founder Badge */}
             <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
 
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-dark-900/95 border border-gold-primary/50 text-gold-light text-xs font-semibold backdrop-blur-md">
@@ -100,8 +95,9 @@ export const FounderSection = () => {
                 •
               </span>
 
+              {/* Updated Om Role */}
               <span className="text-slate-200">
-                Videographer | Editor
+                Videographer | Editor | Marketing Head | Web Developer
               </span>
 
             </div>
@@ -207,7 +203,6 @@ export const FounderSection = () => {
         ========================================= */}
         <div className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-gold-primary/20 hover:border-gold-primary/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
 
-          {/* Photo */}
           <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-gold-primary/30 shadow-lg shadow-gold-primary/10 group-hover:scale-105 transition-transform bg-dark-900">
 
             <img
@@ -277,7 +272,6 @@ export const FounderSection = () => {
         ========================================= */}
         <div className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-cyan-500/20 hover:border-cyan-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
 
-          {/* Photo */}
           <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-cyan-500/30 shadow-lg shadow-cyan-500/10 group-hover:scale-105 transition-transform bg-dark-900">
 
             <img
@@ -347,7 +341,6 @@ export const FounderSection = () => {
         ========================================= */}
         <div className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-pink-500/20 hover:border-pink-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
 
-          {/* Photo */}
           <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-pink-500/30 shadow-lg shadow-pink-500/10 group-hover:scale-105 transition-transform bg-dark-900">
 
             <img
@@ -417,7 +410,6 @@ export const FounderSection = () => {
         ========================================= */}
         <div className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-blue-500/20 hover:border-blue-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
 
-          {/* Photo */}
           <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-blue-500/30 shadow-lg shadow-blue-500/10 group-hover:scale-105 transition-transform bg-dark-900">
 
             <img
