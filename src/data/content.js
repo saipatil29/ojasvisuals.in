@@ -1,7 +1,8 @@
 export const studioData = {
   brandName: "OJAS VISUALS",
 
-  tagline: "Visuals, Digital Experiences & Growth — Built to Make Brands Stand Out.",
+  tagline:
+    "Visuals, Digital Experiences & Growth — Built to Make Brands Stand Out.",
 
   badge: "Visual Production & Digital Studio",
 
@@ -193,6 +194,63 @@ export const studioData = {
         "https://wa.me/917990102448?text=Hi%20Ravi,%20I%20want%20to%20discuss%20brand%20strategy%20and%20marketing%20consulting.",
 
       buttonLabel: "💬 Connect with Ravi"
+    },
+
+    {
+      id: "divyanshu-upadhyay",
+
+      name: "Divyanshu Upadhyay",
+
+      role: "Anchor & Influencer",
+
+      specialization:
+        "Anchoring, Influencer Content & Brand Storytelling",
+
+      tag: "🎤 Creative Voice",
+
+      tagColor: "pink",
+
+      bio:
+        "Strategizing brand narratives and driving visual excellence for the next era. Focused on impactful storytelling, audience engagement, and creating memorable brand experiences.",
+
+      skills: [
+        "🎤 Anchoring",
+        "📱 Influencer Content",
+        "✨ Brand Storytelling"
+      ],
+
+      contactUrl:
+        "https://wa.me/917990102448?text=Hi%20Divyanshu,%20I%20want%20to%20discuss%20anchoring%20and%20influencer%20collaboration.",
+
+      buttonLabel: "💬 Connect with Divyanshu"
+    },
+
+    {
+      id: "harshal-patil",
+
+      name: "Harshal Patil",
+
+      role: "Web Developer",
+
+      specialization: "Web Development & Digital Experiences",
+
+      tag: "💻 Digital Lead",
+
+      tagColor: "blue",
+
+      bio:
+        "Strategizing and executing pixel-perfect, responsive web solutions for the next digital era. Focused on exceptional user experiences, modern web development, and brand-focused digital solutions.",
+
+      skills: [
+        "💻 Web Development",
+        "📱 Responsive Design",
+        "⚡ Modern UI/UX"
+      ],
+
+      contactUrl:
+        "https://wa.me/917990102448?text=Hi%20Harshal,%20I%20want%20to%20discuss%20web%20development%20and%20website%20design.",
+
+      buttonLabel: "💬 Connect with Harshal"
     }
   ],
 
