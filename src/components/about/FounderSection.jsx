@@ -10,12 +10,9 @@ export const FounderSection = () => {
 
   return (
     <section id="about" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+
       {/* Section Header */}
       <div className="text-center mb-16">
-        <div className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
-          The Minds Behind Ojas Visuals
-        </div>
-
         <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
           Leadership &amp; Core Creative Team
         </h2>
@@ -34,6 +31,7 @@ export const FounderSection = () => {
         {/* Left Column: Om's Image */}
         <div className="lg:col-span-5 relative group">
           <div className="relative rounded-2xl overflow-hidden border-2 border-gold-primary/40 shadow-2xl shadow-gold-primary/20 aspect-[3/4] max-h-[500px] w-full mx-auto bg-dark-900">
+
             <img
               src={founderImg}
               alt="Om Parmar - Founder & Director at Ojas Visuals"
@@ -59,6 +57,7 @@ export const FounderSection = () => {
 
         {/* Right Column: Bio & Core Skills */}
         <div className="lg:col-span-7 flex flex-col justify-center space-y-6">
+
           <div>
             <h3 className="font-heading text-3xl sm:text-4xl font-extrabold text-slate-100 mb-1">
               {founder.name}
@@ -73,6 +72,7 @@ export const FounderSection = () => {
 
           {/* Fully Preserved Bio Paragraphs */}
           <div className="space-y-3.5 text-slate-300 text-sm sm:text-base leading-relaxed">
+
             <p className="border-l-2 border-gold-primary/50 pl-4 py-1 text-slate-200">
               {founder.bio1}
             </p>
@@ -80,6 +80,7 @@ export const FounderSection = () => {
             <p className="text-slate-400">
               {founder.bio2}
             </p>
+
           </div>
 
           {/* Interactive Skills Badges */}
@@ -103,6 +104,7 @@ export const FounderSection = () => {
 
           {/* Action Buttons */}
           <div className="pt-3 flex flex-wrap items-center gap-3">
+
             <a
               href={founder.buttons.vipLine.url}
               target="_blank"
@@ -128,6 +130,7 @@ export const FounderSection = () => {
               <Instagram className="w-4 h-4 text-pink-400" />
               <span>Instagram</span>
             </a>
+
           </div>
         </div>
       </div>
@@ -140,6 +143,7 @@ export const FounderSection = () => {
 
           {/* Ghanshyam Photo */}
           <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-gold-primary/30 shadow-lg shadow-gold-primary/10 group-hover:scale-105 transition-transform bg-dark-900">
+
             <img
               src={ghanshyamImg}
               alt="Ghanshyam Patel - Creative Lead at Ojas Visuals"
@@ -150,6 +154,7 @@ export const FounderSection = () => {
             <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-dark-900/90 px-3 py-0.5 rounded-full border border-gold-primary text-[10px] font-bold text-gold-light whitespace-nowrap shadow">
               🎨 Creative Lead
             </div>
+
           </div>
 
           <h3 className="font-heading text-2xl font-bold text-slate-100 mb-1">
@@ -179,6 +184,7 @@ export const FounderSection = () => {
             <MessageSquare className="w-3.5 h-3.5" />
             <span>💬 Connect with Ghanshyam</span>
           </a>
+
         </div>
 
         {/* Ravi Panchal Card */}
@@ -197,6 +203,7 @@ export const FounderSection = () => {
             <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-dark-900/90 px-3 py-0.5 rounded-full border border-cyan-400 text-[10px] font-bold text-cyan-400 whitespace-nowrap shadow">
               📈 Strategic Lead
             </div>
+
           </div>
 
           <h3 className="font-heading text-2xl font-bold text-slate-100 mb-1">
@@ -212,6 +219,7 @@ export const FounderSection = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mb-6">
+
             <span className="px-3 py-1 rounded-full bg-dark-700/80 border border-cyan-500/30 text-cyan-200 text-xs font-medium">
               📈 Marketing Strategy
             </span>
@@ -223,6 +231,7 @@ export const FounderSection = () => {
             <span className="px-3 py-1 rounded-full bg-dark-700/80 border border-cyan-500/30 text-cyan-200 text-xs font-medium">
               🚀 Client Acquisition
             </span>
+
           </div>
 
           <a
@@ -234,9 +243,18 @@ export const FounderSection = () => {
             <MessageSquare className="w-3.5 h-3.5" />
             <span>💬 Connect with Ravi</span>
           </a>
+
         </div>
 
       </div>
+
+      {/* Section Label at Bottom */}
+      <div className="text-center mt-12">
+        <div className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest">
+          The Minds Behind Ojas Visuals
+        </div>
+      </div>
+
     </section>
   );
 };

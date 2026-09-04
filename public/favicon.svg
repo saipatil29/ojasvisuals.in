@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs>
+<linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#FFF0BE"/>
+<stop offset="30%" stop-color="#F59E0B"/>
+<stop offset="70%" stop-color="#D97706"/>
+<stop offset="100%" stop-color="#B45309"/>
+</linearGradient>
+<linearGradient id="c" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#38BDF8"/>
+<stop offset="100%" stop-color="#0284C7"/>
+</linearGradient>
+</defs>
+<circle cx="50" cy="50" r="48" fill="#070a12"/>
+<circle cx="50" cy="50" r="44" fill="none" stroke="url(#g)" stroke-width="3.5"/>
+<path d="M50 10A40 40 0 0 1 84.6 30L61 43Z" fill="url(#g)"/>
+<path d="M84.6 30A40 40 0 0 1 84.6 70L61 57Z" fill="url(#g)" opacity=".85"/>
+<path d="M84.6 70A40 40 0 0 1 50 90L50 63Z" fill="url(#g)"/>
+<path d="M50 90A40 40 0 0 1 15.4 70L39 57Z" fill="url(#g)" opacity=".85"/>
+<path d="M15.4 70A40 40 0 0 1 15.4 30L39 43Z" fill="url(#g)"/>
+<path d="M15.4 30A40 40 0 0 1 50 10L50 37Z" fill="url(#g)" opacity=".85"/>
+<circle cx="50" cy="50" r="14" fill="#070a12" stroke="url(#g)" stroke-width="1.5"/>
+<circle cx="50" cy="50" r="7" fill="url(#c)"/>
+<circle cx="50" cy="50" r="2.5" fill="#fff"/>
+</svg>

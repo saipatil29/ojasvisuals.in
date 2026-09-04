@@ -15,28 +15,53 @@ import { Toast } from './components/common/Toast';
 export function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [selectedService, setSelectedService] = useState('');
-  const [toast, setToast] = useState({ message: '', type: 'success' });
+  const [toast, setToast] = useState({
+    message: '',
+    type: 'success'
+  });
 
   const showToast = (message, type = 'success') => {
-    setToast({ message, type });
+    setToast({
+      message,
+      type
+    });
   };
 
   const closeToast = () => {
-    setToast({ message: '', type: 'success' });
+    setToast({
+      message: '',
+      type: 'success'
+    });
   };
+
 
   // Section Observer for active navigation highlighting
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'portfolio', 'gear', 'vault', 'faq', 'contact'];
+      const sections = [
+        'hero',
+        'services',
+        'portfolio',
+        'gear',
+        'vault',
+        'faq',
+        'contact',
+        'about'
+      ];
+
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
+
         if (el) {
           const top = el.offsetTop;
           const height = el.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
+
+          if (
+            scrollPosition >= top &&
+            scrollPosition < top + height
+          ) {
             setActiveSection(sectionId);
             break;
           }
@@ -45,37 +70,99 @@ export function App() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    // Run once when page loads
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+
 
   return (
     <div className="min-h-screen bg-dark-900 text-slate-100 flex flex-col relative selection:bg-gold-primary selection:text-black">
-      {/* Toast Notification */}
+
+      {/* ================================================== */}
+      {/* TOAST NOTIFICATION */}
+      {/* ================================================== */}
+
       <Toast
         message={toast.message}
         type={toast.type}
         onClose={closeToast}
       />
 
-      {/* Navigation */}
-      <Navbar activeSection={activeSection} />
 
-      {/* Main Content */}
+      {/* ================================================== */}
+      {/* NAVIGATION */}
+      {/* ================================================== */}
+
+      <Navbar
+        activeSection={activeSection}
+      />
+
+
+      {/* ================================================== */}
+      {/* MAIN CONTENT */}
+      {/* ================================================== */}
+
       <main className="flex-grow">
+
+        {/* HOME */}
         <HeroSection />
-        <FounderSection />
-        <ServicesSection onSelectService={(srv) => setSelectedService(srv)} />
+
+
+        {/* SERVICES */}
+        <ServicesSection
+          onSelectService={(srv) => setSelectedService(srv)}
+        />
+
+
+        {/* PORTFOLIO */}
+        <PortfolioSection />
+
+
+        {/* PRODUCTION GEAR */}
         <ProductionGear />
-        <ClientVault onToast={showToast} />
+
+
+        {/* CLIENT VAULT */}
+        <ClientVault
+          onToast={showToast}
+        />
+
+
+        {/* FAQ */}
         <FaqSection />
-        <ContactSection selectedService={selectedService} onToast={showToast} />
+
+
+        {/* CONTACT */}
+        <ContactSection
+          selectedService={selectedService}
+          onToast={showToast}
+        />
+
+
+        {/* ================================================== */}
+        {/* OUR TEAM - LAST MAIN SECTION */}
+        {/* ================================================== */}
+
+        <FounderSection />
+
       </main>
 
-      {/* Footer */}
+
+      {/* ================================================== */}
+      {/* FOOTER */}
+      {/* ================================================== */}
+
       <Footer />
 
-      {/* Floating Action Button */}
+
+      {/* FLOATING WHATSAPP */}
       <WhatsAppFloating />
+
     </div>
   );
 }

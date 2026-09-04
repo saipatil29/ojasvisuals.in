@@ -3,10 +3,17 @@ export const portfolioCategories = [
   { id: "cafe", label: "Café & Dining" },
   { id: "product", label: "Product Commercials" },
   { id: "fashion", label: "Fashion & Fitness" },
-  { id: "personal", label: "Personal Brand" }
+  { id: "personal", label: "Personal Brand" },
+  { id: "web", label: "Web Development" }
 ];
 
+
 export const portfolioItems = [
+
+  /* ================================================== */
+  /* CAFÉ & DINING */
+  /* ================================================== */
+
   {
     id: "artisan-cafe",
     category: "cafe",
@@ -19,13 +26,24 @@ export const portfolioItems = [
     likes: "14.2K",
     duration: "0:28",
     aspectRatio: "9:16",
-    description: "Sizzling espresso extraction, pour-over slow motion at 120fps, and cozy warm atmosphere grading designed to increase café footfall.",
+    description:
+      "Sizzling espresso extraction, pour-over slow motion at 120fps, and cozy warm atmosphere grading designed to increase café footfall.",
     highlight: "120 FPS Macro Pour",
     client: "Roast & Brew Artisan Coffee",
     soundtrack: "Chill Lofi / Organic SFX",
     aspect: "Vertical 4K",
-    deliverables: ["1x Master Reel (9:16)", "3x B-Roll Stories", "Still Frame Grabs"]
+    deliverables: [
+      "1x Master Reel (9:16)",
+      "3x B-Roll Stories",
+      "Still Frame Grabs"
+    ]
   },
+
+
+  /* ================================================== */
+  /* PRODUCT COMMERCIALS */
+  /* ================================================== */
+
   {
     id: "luxury-perfume",
     category: "product",
@@ -38,13 +56,24 @@ export const portfolioItems = [
     likes: "28.9K",
     duration: "0:32",
     aspectRatio: "9:16",
-    description: "Dark aesthetic macro mist droplets, golden anamorphic lens flares, and high-contrast luxury studio lighting for fragrance elevation.",
+    description:
+      "Dark aesthetic macro mist droplets, golden anamorphic lens flares, and high-contrast luxury studio lighting for fragrance elevation.",
     highlight: "Anamorphic Flares & Mist",
     client: "Aura Noir Fragrances",
     soundtrack: "Deep Bass & Ambient Risers",
     aspect: "Vertical 4K",
-    deliverables: ["1x Cinematic Ad (9:16)", "1x Widescreen Cut (16:9)", "Color Grade LUT"]
+    deliverables: [
+      "1x Cinematic Ad (9:16)",
+      "1x Widescreen Cut (16:9)",
+      "Color Grade LUT"
+    ]
   },
+
+
+  /* ================================================== */
+  /* FASHION & FITNESS */
+  /* ================================================== */
+
   {
     id: "streetwear-drop",
     category: "fashion",
@@ -57,13 +86,20 @@ export const portfolioItems = [
     likes: "45.1K",
     duration: "0:24",
     aspectRatio: "9:16",
-    description: "Urban nighttime neon aesthetic, kinetic speed ramps, motion graphics branding, and punchy hip-hop sound design.",
+    description:
+      "Urban nighttime neon aesthetic, kinetic speed ramps, motion graphics branding, and punchy hip-hop sound design.",
     highlight: "Kinetic Speed Ramps",
     client: "OVERDRIVE Apparel",
     soundtrack: "Punchy Trap Beat with SFX",
     aspect: "Vertical 4K",
-    deliverables: ["1x Hype Reel", "2x Model Spotlight Shorts", "TikTok Promo Cut"]
+    deliverables: [
+      "1x Hype Reel",
+      "2x Model Spotlight Shorts",
+      "TikTok Promo Cut"
+    ]
   },
+
+
   {
     id: "gourmet-burger",
     category: "cafe",
@@ -76,13 +112,19 @@ export const portfolioItems = [
     likes: "21.6K",
     duration: "0:26",
     aspectRatio: "9:16",
-    description: "Close-up cheese melt, flame flare-ups, and layered crispy sound design triggering instant cravings and high shareability.",
+    description:
+      "Close-up cheese melt, flame flare-ups, and layered crispy sound design triggering instant cravings and high shareability.",
     highlight: "Cheese Melt Macro",
     client: "Iron Skillet Burgers",
     soundtrack: "Dynamic Percussion & Crisp Foley",
     aspect: "Vertical 4K",
-    deliverables: ["1x Main Promo Reel", "4x Story Cuts"]
+    deliverables: [
+      "1x Main Promo Reel",
+      "4x Story Cuts"
+    ]
   },
+
+
   {
     id: "fitness-athlete",
     category: "fashion",
@@ -95,13 +137,23 @@ export const portfolioItems = [
     likes: "38.4K",
     duration: "0:30",
     aspectRatio: "9:16",
-    description: "Dark gym spotlighting, chalk dust particles illuminated in backlight, dramatic breath SFX, and high-impact motivational edits.",
+    description:
+      "Dark gym spotlighting, chalk dust particles illuminated in backlight, dramatic breath SFX, and high-impact motivational edits.",
     highlight: "Slow-Mo Chalk Blast",
     client: "Apex Strength Academy",
     soundtrack: "Cinematic Orchestral Trap",
     aspect: "Vertical 4K",
-    deliverables: ["1x Gym Anthem Reel", "Raw Clip Pack"]
+    deliverables: [
+      "1x Gym Anthem Reel",
+      "Raw Clip Pack"
+    ]
   },
+
+
+  /* ================================================== */
+  /* PERSONAL BRAND */
+  /* ================================================== */
+
   {
     id: "executive-branding",
     category: "personal",
@@ -114,11 +166,78 @@ export const portfolioItems = [
     likes: "12.8K",
     duration: "0:45",
     aspectRatio: "9:16",
-    description: "Crisp lapel audio, two-camera interview setup, animated key takeaways, and smooth lifestyle b-roll overlay.",
+    description:
+      "Crisp lapel audio, two-camera interview setup, animated key takeaways, and smooth lifestyle b-roll overlay.",
     highlight: "Clean Subtitle Typography",
     client: "Venture Capital Partner",
     soundtrack: "Subtle Corporate Ambient",
     aspect: "Vertical 4K",
-    deliverables: ["3x Thought Leadership Reels", "Audio Podcast Clips"]
+    deliverables: [
+      "3x Thought Leadership Reels",
+      "Audio Podcast Clips"
+    ]
+  },
+
+
+  /* ================================================== */
+  /* WEB DEVELOPMENT */
+  /* ================================================== */
+
+  {
+    id: "ojas-business-website",
+    category: "web",
+    title: "Ojas Visuals Digital Experience",
+    subtitle: "Modern Business Website",
+    tag: "Web Development",
+    gradient: "from-blue-950/90 via-cyan-950/60 to-dark-900",
+    accentColor: "#38BDF8",
+    views: "Live",
+    likes: "Responsive",
+    duration: "Web",
+    aspectRatio: "16:9",
+    description:
+      "A modern responsive digital experience designed to present creative services, portfolio work, team information, client communication, and business enquiries.",
+    highlight: "Responsive React Experience",
+    client: "Ojas Visuals",
+    soundtrack: "Interactive Digital Experience",
+    aspect: "Responsive Web",
+    deliverables: [
+      "Responsive Website",
+      "Modern UI Design",
+      "React Development",
+      "Deployment & Hosting Setup"
+    ],
+    projectType: "website",
+    status: "Live Project"
+  },
+
+
+  {
+    id: "business-web-concept",
+    category: "web",
+    title: "Business Website Concept",
+    subtitle: "Brand-Focused Digital Presence",
+    tag: "Web Development",
+    gradient: "from-violet-950/90 via-indigo-950/60 to-dark-900",
+    accentColor: "#818CF8",
+    views: "Concept",
+    likes: "UI / UX",
+    duration: "Web",
+    aspectRatio: "16:9",
+    description:
+      "A premium website concept focused on clear brand positioning, responsive layouts, strong calls to action, service presentation, and conversion-focused user experience.",
+    highlight: "Conversion-Focused UI",
+    client: "Concept Project",
+    soundtrack: "Digital Interface Experience",
+    aspect: "Responsive Web",
+    deliverables: [
+      "UI / UX Design",
+      "Responsive Frontend",
+      "Business Pages",
+      "Contact & Enquiry Flow"
+    ],
+    projectType: "website",
+    status: "Concept"
   }
+
 ];
