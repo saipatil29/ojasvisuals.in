@@ -14,15 +14,15 @@ export const studioData = {
     phoneRaw: "917990102448",
 
     secondPhone: "+91 9104903595",
-    secondPhoneRaw: "919104903595",
+    secondPhoneRaw: "917990102448",
 
     whatsappUrl:
-      "https://wa.me/919104903595?text=Hi%20Om,%20I%20want%20to%20inquire%20about%20video%20shooting%20and%20reels%20production%20with%20Ojas%20Visuals.",
+      "https://wa.me/917990102448?text=Hi%20Om,%20I%20want%20to%20inquire%20about%20video%20shooting%20and%20reels%20production%20with%20Ojas%20Visuals.",
 
     vipPhone: "9104903595",
 
     vipWhatsappUrl:
-      "https://wa.me/919104903595?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
+      "https://wa.me/917990102448?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
 
     instagramHandle: "@ojasvisuals.official",
 
@@ -79,7 +79,7 @@ export const studioData = {
         label: "🔒 Request Direct Line (9104903595)",
 
         url:
-          "https://wa.me/919104903595?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
+          "https://wa.me/917990102448?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
       },
 
       work: "#portfolio",
@@ -115,7 +115,7 @@ export const studioData = {
       ],
 
       contactUrl:
-        "https://wa.me/919104903595?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
+        "https://wa.me/917990102448?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
 
       buttonLabel: "🔒 VIP Direct Line (9104903595)",
     },
@@ -143,7 +143,7 @@ export const studioData = {
       ],
 
       contactUrl:
-        "https://wa.me/919104903595?text=Hi%20Ghanshyam,%20I%20want%20to%20collaborate%20on%20design%20and%20video%20production.",
+        "https://wa.me/917990102448?text=Hi%20Ghanshyam,%20I%20want%20to%20collaborate%20on%20design%20and%20video%20production.",
 
       buttonLabel: "💬 Connect with Ghanshyam",
     },
@@ -171,7 +171,7 @@ export const studioData = {
       ],
 
       contactUrl:
-        "https://wa.me/919104903595?text=Hi%20Ravi,%20I%20want%20to%20discuss%20brand%20strategy%20and%20marketing%20consulting.",
+        "https://wa.me/917990102448?text=Hi%20Ravi,%20I%20want%20to%20discuss%20brand%20strategy%20and%20marketing%20consulting.",
 
       buttonLabel: "💬 Connect with Ravi",
     },
@@ -200,7 +200,7 @@ export const studioData = {
       ],
 
       contactUrl:
-        "https://wa.me/919104903595?text=Hi%20Divyanshu,%20I%20want%20to%20discuss%20anchoring%20and%20influencer%20collaboration.",
+        "https://wa.me/917990102448?text=Hi%20Divyanshu,%20I%20want%20to%20discuss%20anchoring%20and%20influencer%20collaboration.",
 
       buttonLabel: "💬 Connect with Divyanshu",
     },
@@ -228,7 +228,7 @@ export const studioData = {
       ],
 
       contactUrl:
-        "https://wa.me/919104903595?text=Hi%20Harshal,%20I%20want%20to%20discuss%20web%20development%20and%20website%20design.",
+        "https://wa.me/917990102448?text=Hi%20Harshal,%20I%20want%20to%20discuss%20web%20development%20and%20website%20design.",
 
       buttonLabel: "💬 Connect with Harshal",
     },
@@ -256,7 +256,7 @@ export const studioData = {
       ],
 
       contactUrl:
-        "https://wa.me/919104903595?text=Hi%20Smit,%20I%20want%20to discuss photography and visual production with Ojas Visuals.",
+        "https://wa.me/917990102448?text=Hi%20Smit,%20I%20want%20to discuss photography and visual production with Ojas Visuals.",
 
       buttonLabel: "💬 Connect with Smit",
     },
