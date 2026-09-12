@@ -26,7 +26,7 @@ export const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div data-reveal className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 
           {/* =====================================================
               COLUMN 1 — BRAND
@@ -246,7 +246,7 @@ export const Footer = () => {
                 href={studioData.contact.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-dark-800 border border-slate-700 text-pink-400 hover:text-white hover:bg-pink-600 transition-all"
+                className="p-2.5 rounded-xl bg-dark-800 border border-slate-700 text-pink-400 hover:text-white hover:bg-pink-600 hover:scale-110 hover:border-pink-500 transition-all"
                 aria-label="Instagram Profile"
               >
                 <Instagram className="w-4 h-4" />
@@ -258,7 +258,7 @@ export const Footer = () => {
                 href={studioData.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-dark-800 border border-slate-700 text-whatsapp-green hover:text-white hover:bg-whatsapp-green transition-all"
+                className="p-2.5 rounded-xl bg-dark-800 border border-slate-700 text-whatsapp-green hover:text-white hover:bg-whatsapp-green hover:scale-110 hover:border-whatsapp-green transition-all"
                 aria-label="WhatsApp Message"
               >
                 <MessageSquare className="w-4 h-4" />

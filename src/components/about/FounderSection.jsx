@@ -24,15 +24,15 @@ export const FounderSection = () => {
       ========================================= */}
       <div className="text-center mb-16">
 
-        <div className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-5">
+        <div data-reveal className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-5">
           The Minds Behind Ojas Visuals
         </div>
 
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
+        <h2 data-reveal data-reveal-delay="80" className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
           Leadership &amp; Core Creative Team
         </h2>
 
-        <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+        <p data-reveal data-reveal-delay="140" className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
           A multidisciplinary team combining cinematic production, creative
           strategy, marketing, influencer presence, and modern web development
           to build powerful digital experiences for ambitious brands.
@@ -44,13 +44,16 @@ export const FounderSection = () => {
       {/* ========================================
           FOUNDER — OM PARMAR
       ========================================= */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 rounded-3xl bg-gradient-to-br from-dark-800/95 via-dark-700/70 to-dark-800/95 border border-gold-primary/30 shadow-2xl shadow-black/70 relative overflow-hidden mb-12">
+      <div data-reveal="scale" className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 rounded-3xl bg-gradient-to-br from-dark-800/95 via-dark-700/70 to-dark-800/95 border border-gold-primary/30 shadow-2xl shadow-black/70 relative overflow-hidden mb-12">
 
         <div className="absolute top-0 right-0 w-48 h-48 bg-gold-primary/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Om's Image */}
         <div className="lg:col-span-5 relative group">
-          <div className="relative rounded-2xl overflow-hidden border-2 border-gold-primary/40 shadow-2xl shadow-gold-primary/20 aspect-[3/4] max-h-[500px] w-full mx-auto bg-dark-900">
+          <div
+            data-cursor="FOUNDER"
+            className="relative rounded-2xl overflow-hidden border-2 border-gold-primary/40 shadow-2xl shadow-gold-primary/20 aspect-[3/4] max-h-[500px] w-full mx-auto bg-dark-900"
+          >
 
             <img
               src={founderImg}
@@ -201,9 +204,9 @@ export const FounderSection = () => {
         {/* ========================================
             GHANSHYAM PATEL
         ========================================= */}
-        <div className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-gold-primary/20 hover:border-gold-primary/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
+        <div data-reveal="scale" data-reveal-delay="0" className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-gold-primary/20 hover:border-gold-primary/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
 
-          <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-gold-primary/30 shadow-lg shadow-gold-primary/10 group-hover:scale-105 transition-transform bg-dark-900">
+          <div data-cursor="VIEW" className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-gold-primary/30 shadow-lg shadow-gold-primary/10 group-hover:scale-105 transition-transform bg-dark-900">
 
             <img
               src={ghanshyamImg}
@@ -270,9 +273,9 @@ export const FounderSection = () => {
         {/* ========================================
             RAVI PANCHAL
         ========================================= */}
-        <div className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-cyan-500/20 hover:border-cyan-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
+        <div data-reveal="scale" data-reveal-delay="90" className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-cyan-500/20 hover:border-cyan-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
 
-          <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-cyan-500/30 shadow-lg shadow-cyan-500/10 group-hover:scale-105 transition-transform bg-dark-900">
+          <div data-cursor="VIEW" className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-cyan-500/30 shadow-lg shadow-cyan-500/10 group-hover:scale-105 transition-transform bg-dark-900">
 
             <img
               src={raviImg}
@@ -339,9 +342,9 @@ export const FounderSection = () => {
         {/* ========================================
             DIVYANSHU UPADHYAY
         ========================================= */}
-        <div className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-pink-500/20 hover:border-pink-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
+        <div data-reveal="scale" data-reveal-delay="0" className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-pink-500/20 hover:border-pink-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
 
-          <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-pink-500/30 shadow-lg shadow-pink-500/10 group-hover:scale-105 transition-transform bg-dark-900">
+          <div data-cursor="VIEW" className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-pink-500/30 shadow-lg shadow-pink-500/10 group-hover:scale-105 transition-transform bg-dark-900">
 
             <img
               src={divyanshuImg}
@@ -408,9 +411,9 @@ export const FounderSection = () => {
         {/* ========================================
             HARSHAL PATIL
         ========================================= */}
-        <div className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-blue-500/20 hover:border-blue-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
+        <div data-reveal="scale" data-reveal-delay="90" className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-blue-500/20 hover:border-blue-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
 
-          <div className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-blue-500/30 shadow-lg shadow-blue-500/10 group-hover:scale-105 transition-transform bg-dark-900">
+          <div data-cursor="VIEW" className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-blue-500/30 shadow-lg shadow-blue-500/10 group-hover:scale-105 transition-transform bg-dark-900">
 
             <img
               src={harshalImg}

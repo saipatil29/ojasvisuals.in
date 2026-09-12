@@ -10,8 +10,8 @@ export const studioData = {
     "We create cinematic videos, high-converting social media content, and modern websites that help brands build a powerful digital presence.",
 
   contact: {
-    phone: "+91 7990102448",
-    phoneRaw: "917990102448",
+    phone: "+91 7990102448"/"9104903595",
+    phoneRaw: "917990102448"/" 9104903595",
 
     whatsappUrl:
       "https://wa.me/917990102448?text=Hi%20Om,%20I%20want%20to%20inquire%20about%20video%20shooting%20and%20reels%20production%20with%20Ojas%20Visuals.",

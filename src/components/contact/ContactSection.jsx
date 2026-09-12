@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { studioData } from '../../data/content';
+import { useMagnetic } from '../../hooks/useMagnetic';
 import {
   MessageSquare,
   Phone,
@@ -12,6 +13,7 @@ import {
 
 export const ContactSection = ({ selectedService, onToast }) => {
   const { contact } = studioData;
+  const submitRef = useMagnetic(0.15);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -69,17 +71,18 @@ export const ContactSection = ({ selectedService, onToast }) => {
       id="contact"
       className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
     >
-      {/* Section Header */}
+      {/* Section Header — final cinematic CTA moment */}
       <div className="text-center mb-16">
-        <div className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
+        <div data-reveal className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
           Get In Touch
         </div>
 
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
-          Let's Create Together
+        <h2 data-reveal data-reveal-delay="80" className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4 text-balance">
+          Ready to Create Something{' '}
+          <span className="text-gold-gradient">Impossible?</span>
         </h2>
 
-        <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+        <p data-reveal data-reveal-delay="140" className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
           Talk to us about cinematic video production, social media
           management, commercial campaigns, or modern website development
           for your brand.
@@ -87,7 +90,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
       </div>
 
       {/* Main Container */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 p-6 sm:p-10 lg:p-12 rounded-3xl bg-dark-800/90 border border-gold-primary/20 shadow-2xl relative overflow-hidden">
+      <div data-reveal="scale" className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 p-6 sm:p-10 lg:p-12 rounded-3xl bg-dark-800/90 border border-gold-primary/20 shadow-2xl relative overflow-hidden">
 
         {/* Left Column */}
         <div className="lg:col-span-5 space-y-6 flex flex-col justify-between">
@@ -108,7 +111,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
             <div className="space-y-4">
 
               {/* Phone / WhatsApp */}
-              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/60 flex items-center justify-between">
+              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/60 flex items-center justify-between hover:border-gold-primary/30 transition-colors">
 
                 <div className="flex items-center gap-3">
 
@@ -150,7 +153,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
               </div>
 
               {/* Location */}
-              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/60 flex items-center gap-3">
+              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/60 flex items-center gap-3 hover:border-gold-primary/30 transition-colors">
 
                 <div className="p-2.5 rounded-xl bg-gold-primary/20 text-gold-primary">
                   <MapPin className="w-5 h-5" />
@@ -171,7 +174,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
               </div>
 
               {/* Email */}
-              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/60 flex items-center justify-between">
+              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/60 flex items-center justify-between hover:border-gold-primary/30 transition-colors">
 
                 <div className="flex items-center gap-3">
 
@@ -213,7 +216,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
               </div>
 
               {/* Domain */}
-              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/60 flex items-center gap-3">
+              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/60 flex items-center gap-3 hover:border-gold-primary/30 transition-colors">
 
                 <div className="p-2.5 rounded-xl bg-purple-500/20 text-purple-400">
                   <Globe className="w-5 h-5" />
@@ -279,7 +282,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
                     })
                   }
                   placeholder="e.g. Om Parmar / Velvet Cafe"
-                  className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-primary"
+                  className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-primary focus:shadow-[0_0_0_4px_rgba(245,158,11,0.15)] transition-shadow"
                   required
                 />
 
@@ -302,7 +305,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
                     })
                   }
                   placeholder="e.g. +91 7990102448"
-                  className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-primary"
+                  className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-primary focus:shadow-[0_0_0_4px_rgba(245,158,11,0.15)] transition-shadow"
                   required
                 />
 
@@ -328,7 +331,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
                       service: e.target.value
                     })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 focus:outline-none focus:border-gold-primary"
+                  className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 focus:outline-none focus:border-gold-primary focus:shadow-[0_0_0_4px_rgba(245,158,11,0.15)] transition-shadow"
                 >
 
                   <option value="Cinematic Reel Production">
@@ -374,7 +377,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
                       budget: e.target.value
                     })
                   }
-                  className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 focus:outline-none focus:border-gold-primary"
+                  className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 focus:outline-none focus:border-gold-primary focus:shadow-[0_0_0_4px_rgba(245,158,11,0.15)] transition-shadow"
                 >
 
                   <option value="₹1,000 - ₹1,500">
@@ -437,7 +440,7 @@ export const ContactSection = ({ selectedService, onToast }) => {
                   })
                 }
                 placeholder="Tell us about your video project, social media requirements, website, business, preferred style, pages, features, or references..."
-                className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-primary"
+                className="w-full px-4 py-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-primary focus:shadow-[0_0_0_4px_rgba(245,158,11,0.15)] transition-shadow"
                 required
               />
 
@@ -445,7 +448,9 @@ export const ContactSection = ({ selectedService, onToast }) => {
 
             {/* Submit Button */}
             <button
+              ref={submitRef}
               type="submit"
+              data-cursor="SEND"
               className="w-full flex items-center justify-center gap-2.5 py-4 rounded-xl bg-gradient-to-r from-whatsapp-green to-emerald-600 hover:from-emerald-400 hover:to-whatsapp-green text-white font-bold text-sm shadow-xl shadow-whatsapp-green/25 hover:shadow-whatsapp-green/40 hover:-translate-y-0.5 transition-all duration-200"
             >
               <MessageSquare className="w-4 h-4" />

@@ -71,15 +71,15 @@ export const PortfolioSection = () => {
 
       <div className="text-center mb-12">
 
-        <div className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
+        <div data-reveal className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
           Portfolio
         </div>
 
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
+        <h2 data-reveal data-reveal-delay="80" className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
           Selected Showcase
         </h2>
 
-        <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+        <p data-reveal data-reveal-delay="140" className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
           From cinematic video production and branded storytelling to modern,
           responsive websites and digital experiences built for ambitious brands.
         </p>
@@ -91,7 +91,7 @@ export const PortfolioSection = () => {
       {/* INSTAGRAM BANNER */}
       {/* ================================================== */}
 
-      <div className="text-center mb-10">
+      <div data-reveal className="text-center mb-10">
 
         <a
           href={studioData.contact.instagramUrl}
@@ -119,7 +119,7 @@ export const PortfolioSection = () => {
       {/* FILTER + SEARCH */}
       {/* ================================================== */}
 
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10">
+      <div data-reveal className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10">
 
         {/* CATEGORY BUTTONS */}
 
@@ -160,7 +160,7 @@ export const PortfolioSection = () => {
             placeholder="Search projects..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-9 pr-4 py-2 rounded-full bg-dark-800 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-gold-primary"
+            className="w-full pl-9 pr-4 py-2 rounded-full bg-dark-800 border border-slate-700/60 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-gold-primary transition-colors"
           />
 
         </div>
@@ -197,7 +197,7 @@ export const PortfolioSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {filteredItems.map((item) => {
+          {filteredItems.map((item, idx) => {
 
             /* ================================================== */
             /* WEBSITE PROJECT CARD */
@@ -208,8 +208,16 @@ export const PortfolioSection = () => {
               return (
                 <div
                   key={item.id}
+                  data-reveal="scale"
+                  data-reveal-delay={(idx % 3) * 100}
+                  data-cursor="EXPLORE"
                   className="group relative rounded-2xl overflow-hidden border border-gold-primary/20 hover:border-gold-primary shadow-xl shadow-black/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-gold-primary/20 bg-dark-800"
                 >
+
+                  {/* Project Number */}
+                  <span className="absolute top-4 left-4 z-30 font-heading text-xs font-bold text-gold-light/70 bg-black/60 backdrop-blur-md px-2 py-1 rounded-full border border-gold-primary/20">
+                    {String(idx + 1).padStart(2, '0')}
+                  </span>
 
                   {/* Browser Window */}
 
@@ -218,7 +226,7 @@ export const PortfolioSection = () => {
                     {/* Background */}
 
                     <div
-                      className={`absolute inset-0 bg-gradient-to-br ${item.gradient}`}
+                      className={`absolute inset-0 bg-gradient-to-br ${item.gradient} transition-transform duration-700 group-hover:scale-105`}
                     />
 
 
@@ -322,7 +330,7 @@ export const PortfolioSection = () => {
 
                     {/* Website Badge */}
 
-                    <div className="absolute top-7 left-7 z-30">
+                    <div className="absolute top-7 left-7 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 
                       <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/70 backdrop-blur-md border border-gold-primary/40 text-[10px] font-bold text-gold-light uppercase tracking-wider">
 
@@ -452,13 +460,21 @@ export const PortfolioSection = () => {
               <div
                 key={item.id}
                 onClick={() => setSelectedVideo(item)}
+                data-reveal="scale"
+                data-reveal-delay={(idx % 3) * 100}
+                data-cursor="WATCH"
                 className="group relative rounded-2xl overflow-hidden aspect-[9/16] max-h-[540px] border border-gold-primary/20 hover:border-gold-primary shadow-xl shadow-black/50 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-gold-primary/20 bg-dark-800 flex flex-col justify-between p-5"
               >
+
+                {/* Project Number */}
+                <span className="absolute top-4 right-4 z-20 font-heading text-xs font-bold text-gold-light/70 bg-black/60 backdrop-blur-md px-2 py-1 rounded-full border border-gold-primary/20">
+                  {String(idx + 1).padStart(2, '0')}
+                </span>
 
                 {/* Background Gradient */}
 
                 <div
-                  className={`absolute inset-0 bg-gradient-to-b ${item.gradient} transition-transform duration-700 group-hover:scale-105`}
+                  className={`absolute inset-0 bg-gradient-to-b ${item.gradient} transition-transform duration-700 group-hover:scale-110`}
                 />
 
 

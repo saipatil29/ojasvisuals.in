@@ -13,13 +13,13 @@ export const FaqSection = () => {
     <section id="faq" className="relative py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <div className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
+        <div data-reveal className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
           Got Questions?
         </div>
-        <h2 className="font-heading text-3xl sm:text-4xl font-bold text-slate-100 mb-3">
+        <h2 data-reveal data-reveal-delay="80" className="font-heading text-3xl sm:text-4xl font-bold text-slate-100 mb-3">
           Frequently Asked Questions
         </h2>
-        <p className="text-slate-400 text-xs sm:text-sm">
+        <p data-reveal data-reveal-delay="140" className="text-slate-400 text-xs sm:text-sm">
           Everything you need to know about booking, deliverables, turnaround times, and shoot logistics.
         </p>
       </div>
@@ -31,6 +31,8 @@ export const FaqSection = () => {
           return (
             <div
               key={idx}
+              data-reveal
+              data-reveal-delay={idx * 70}
               className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
                 isOpen
                   ? "bg-dark-800 border-gold-primary/40 shadow-xl shadow-gold-primary/10"
@@ -44,7 +46,7 @@ export const FaqSection = () => {
                 aria-expanded={isOpen}
               >
                 <div className="flex items-center gap-3">
-                  <HelpCircle className={`w-5 h-5 shrink-0 ${isOpen ? "text-gold-primary" : "text-slate-500"}`} />
+                  <HelpCircle className={`w-5 h-5 shrink-0 transition-colors duration-300 ${isOpen ? "text-gold-primary" : "text-slate-500"}`} />
                   <span className="font-heading font-semibold text-sm sm:text-base text-slate-100">
                     {faq.q}
                   </span>
@@ -52,18 +54,26 @@ export const FaqSection = () => {
                 <ChevronDown className={`w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180 text-gold-primary" : ""}`} />
               </button>
 
-              {isOpen && (
-                <div className="px-5 sm:px-6 pb-6 pt-1 border-t border-slate-800/80 text-xs sm:text-sm text-slate-300 leading-relaxed animate-fadeIn">
-                  <p className="pl-8">{faq.a}</p>
+              <div
+                className="grid transition-all duration-300 ease-in-out"
+                style={{
+                  gridTemplateRows: isOpen ? '1fr' : '0fr',
+                  opacity: isOpen ? 1 : 0
+                }}
+              >
+                <div className="overflow-hidden">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 border-t border-slate-800/80 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    <p className="pl-8">{faq.a}</p>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           );
         })}
       </div>
 
       {/* Still have questions banner */}
-      <div className="mt-8 p-6 rounded-2xl bg-dark-900 border border-slate-800 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div data-reveal className="mt-8 p-6 rounded-2xl bg-dark-900 border border-slate-800 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-left">
           <h4 className="font-heading font-bold text-sm text-slate-100">Have a custom question or specific timeline?</h4>
           <p className="text-xs text-slate-400">Om Parmar is available directly on WhatsApp to assist you.</p>

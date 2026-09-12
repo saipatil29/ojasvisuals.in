@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 
 export const Modal = ({ isOpen, onClose, title, children, maxWidth = "max-w-2xl" }) => {
+  const [entered, setEntered] = useState(false);
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
@@ -9,7 +11,14 @@ export const Modal = ({ isOpen, onClose, title, children, maxWidth = "max-w-2xl"
     if (isOpen) {
       document.body.style.overflow = 'hidden';
       window.addEventListener('keydown', handleKeyDown);
+      const frame = requestAnimationFrame(() => setEntered(true));
+      return () => {
+        cancelAnimationFrame(frame);
+        document.body.style.overflow = 'unset';
+        window.removeEventListener('keydown', handleKeyDown);
+      };
     }
+    setEntered(false);
     return () => {
       document.body.style.overflow = 'unset';
       window.removeEventListener('keydown', handleKeyDown);
@@ -22,12 +31,18 @@ export const Modal = ({ isOpen, onClose, title, children, maxWidth = "max-w-2xl"
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-dark-900/80 backdrop-blur-md transition-opacity"
+        className={`fixed inset-0 bg-dark-900/80 backdrop-blur-md transition-opacity duration-300 ${
+          entered ? 'opacity-100' : 'opacity-0'
+        }`}
         onClick={onClose}
       />
 
       {/* Dialog Container */}
-      <div className={`relative w-full ${maxWidth} bg-dark-800 border border-gold-primary/30 rounded-2xl shadow-2xl overflow-hidden z-10 my-8 transition-all`}>
+      <div
+        className={`relative w-full ${maxWidth} bg-dark-800 border border-gold-primary/30 rounded-2xl shadow-2xl overflow-hidden z-10 my-8 transition-all duration-300 ease-out ${
+          entered ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-3'
+        }`}
+      >
         {/* Modal Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-dark-600/50 bg-dark-700/50">
           <h3 className="font-heading font-bold text-lg text-slate-100 flex items-center gap-2">

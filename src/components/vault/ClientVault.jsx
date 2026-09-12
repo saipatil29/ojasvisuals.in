@@ -43,21 +43,21 @@ export const ClientVault = ({ onToast }) => {
     <section id="vault" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <div className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
+        <div data-reveal className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">
           Client Area
         </div>
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
+        <h2 data-reveal data-reveal-delay="80" className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
           Private Review Vault
         </h2>
-        <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+        <p data-reveal data-reveal-delay="140" className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
           Review unreleased rough cuts, color grading variations, and download dedicated project deliverables securely.
         </p>
       </div>
 
       {!isUnlocked ? (
         /* Locked State */
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-dark-800/95 via-dark-700/70 to-dark-800/95 border-2 border-dashed border-gold-primary/40 shadow-2xl max-w-xl mx-auto text-center relative overflow-hidden">
-          <div className="w-16 h-16 rounded-full bg-gold-primary/10 border border-gold-primary/30 flex items-center justify-center mx-auto mb-6 text-gold-primary">
+        <div data-reveal="scale" className="glass-panel p-8 sm:p-12 rounded-3xl border-2 border-dashed border-gold-primary/40 shadow-2xl max-w-xl mx-auto text-center relative overflow-hidden">
+          <div className="w-16 h-16 rounded-full bg-gold-primary/10 border border-gold-primary/30 flex items-center justify-center mx-auto mb-6 text-gold-primary animate-glow-pulse">
             <Lock className="w-8 h-8" />
           </div>
 
@@ -77,7 +77,7 @@ export const ClientVault = ({ onToast }) => {
                 placeholder="Enter Access Code (e.g. ojas2026)"
                 value={passcode}
                 onChange={(e) => setPasscode(e.target.value)}
-                className="w-full pl-11 pr-4 py-3 rounded-full bg-dark-900 border border-slate-700 text-center font-heading font-semibold text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-primary text-sm tracking-wider"
+                className="w-full pl-11 pr-4 py-3 rounded-full bg-dark-900 border border-slate-700 text-center font-heading font-semibold text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-primary focus:shadow-[0_0_0_4px_rgba(245,158,11,0.15)] text-sm tracking-wider transition-shadow"
                 required
               />
             </div>
@@ -136,7 +136,7 @@ export const ClientVault = ({ onToast }) => {
             </h4>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/80 flex items-center justify-between">
+              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/80 flex items-center justify-between hover:border-gold-primary/40 transition-colors">
                 <div className="flex items-center gap-3">
                   <Film className="w-8 h-8 text-gold-primary shrink-0" />
                   <div>
@@ -154,7 +154,7 @@ export const ClientVault = ({ onToast }) => {
                 </a>
               </div>
 
-              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/80 flex items-center justify-between">
+              <div className="p-4 rounded-2xl bg-dark-900/90 border border-slate-700/80 flex items-center justify-between hover:border-gold-primary/40 transition-colors">
                 <div className="flex items-center gap-3">
                   <Film className="w-8 h-8 text-gold-primary shrink-0" />
                   <div>
@@ -189,7 +189,7 @@ export const ClientVault = ({ onToast }) => {
                 value={feedbackText}
                 onChange={(e) => setFeedbackText(e.target.value)}
                 placeholder="E.g. Clip 01: Timecode 0:08 look great! In Clip 02 can we brighten the shadow in the cafe shot?"
-                className="w-full p-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 focus:outline-none focus:border-gold-primary"
+                className="w-full p-3 rounded-xl bg-dark-800 border border-slate-700 text-xs text-slate-100 focus:outline-none focus:border-gold-primary focus:shadow-[0_0_0_4px_rgba(245,158,11,0.15)] transition-shadow"
                 required
               />
               <button

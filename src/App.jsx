@@ -11,14 +11,24 @@ import { ContactSection } from './components/contact/ContactSection';
 import { Footer } from './components/common/Footer';
 import { WhatsAppFloating } from './components/common/WhatsAppFloating';
 import { Toast } from './components/common/Toast';
+import { Preloader } from './components/common/Preloader';
+import { CustomCursor } from './components/common/CustomCursor';
+import { ScrollProgress } from './components/common/ScrollProgress';
+import { AmbientAtmosphere } from './components/common/AmbientAtmosphere';
+import { useScrollReveal } from './hooks/useScrollReveal';
 
 export function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [selectedService, setSelectedService] = useState('');
+  const [preloaderDone, setPreloaderDone] = useState(false);
   const [toast, setToast] = useState({
     message: '',
     type: 'success'
   });
+
+  // Cinematic scroll-reveal system — observes every [data-reveal] element
+  // rendered across the whole site and fades/translates it into view once.
+  useScrollReveal();
 
   const showToast = (message, type = 'success') => {
     setToast({
@@ -82,6 +92,28 @@ export function App() {
 
   return (
     <div className="min-h-screen bg-dark-900 text-slate-100 flex flex-col relative selection:bg-gold-primary selection:text-black">
+
+      {/* ================================================== */}
+      {/* CINEMATIC PRELOADER — first visit only */}
+      {/* ================================================== */}
+
+      <Preloader onDone={() => setPreloaderDone(true)} />
+
+
+      {/* ================================================== */}
+      {/* GLOBAL CINEMATIC ATMOSPHERE (grain + ambient glow) */}
+      {/* ================================================== */}
+
+      <AmbientAtmosphere />
+
+
+      {/* ================================================== */}
+      {/* SCROLL PROGRESS + CUSTOM CURSOR (desktop only) */}
+      {/* ================================================== */}
+
+      <ScrollProgress />
+      <CustomCursor />
+
 
       {/* ================================================== */}
       {/* TOAST NOTIFICATION */}

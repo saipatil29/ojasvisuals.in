@@ -24,10 +24,13 @@ export const ProductionGear = () => {
       id="gear"
       className="relative py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
     >
-      <div className="p-8 sm:p-12 rounded-3xl bg-dark-800/80 border border-slate-700/60 shadow-2xl relative overflow-hidden">
+      <div data-reveal="scale" className="p-8 sm:p-12 rounded-3xl bg-dark-800/80 border border-slate-700/60 shadow-2xl relative overflow-hidden">
+
+        {/* Ambient corner glow */}
+        <div className="absolute -top-20 -right-20 w-64 h-64 bg-gold-primary/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-12 relative">
           <span className="text-xs font-bold text-gold-primary uppercase tracking-widest">
             Cinema Grade Standards
           </span>
@@ -43,16 +46,18 @@ export const ProductionGear = () => {
         </div>
 
         {/* Equipment Matrix */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
           {studioData.productionGear.map((gear, idx) => {
             const IconComp = icons[idx];
 
             return (
               <div
                 key={idx}
-                className="p-5 rounded-2xl bg-dark-900/90 border border-slate-800 hover:border-gold-primary/40 transition-all flex items-start gap-4"
+                data-reveal
+                data-reveal-delay={idx * 80}
+                className="group p-5 rounded-2xl bg-dark-900/90 border border-slate-800 hover:border-gold-primary/40 hover:-translate-y-1 transition-all duration-300 flex items-start gap-4"
               >
-                <div className="p-3 rounded-xl bg-dark-800 border border-slate-700 text-gold-primary shrink-0">
+                <div className="p-3 rounded-xl bg-dark-800 border border-slate-700 text-gold-primary shrink-0 group-hover:scale-110 group-hover:border-gold-primary/50 group-hover:shadow-lg group-hover:shadow-gold-primary/20 transition-all duration-300">
                   <IconComp className="w-5 h-5" />
                 </div>
 
