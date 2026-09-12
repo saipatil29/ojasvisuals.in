@@ -10,16 +10,19 @@ export const studioData = {
     "We create cinematic videos, high-converting social media content, and modern websites that help brands build a powerful digital presence.",
 
   contact: {
-    phone: "+91 7990102448"/"9104903595",
-    phoneRaw: "917990102448"/" 9104903595",
+    phone: "+91 7990102448",
+    phoneRaw: "917990102448",
+
+    secondPhone: "+91 9104903595",
+    secondPhoneRaw: "919104903595",
 
     whatsappUrl:
-      "https://wa.me/917990102448?text=Hi%20Om,%20I%20want%20to%20inquire%20about%20video%20shooting%20and%20reels%20production%20with%20Ojas%20Visuals.",
+      "https://wa.me/919104903595?text=Hi%20Om,%20I%20want%20to%20inquire%20about%20video%20shooting%20and%20reels%20production%20with%20Ojas%20Visuals.",
 
     vipPhone: "9104903595",
 
     vipWhatsappUrl:
-      "https://wa.me/917990102448?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
+      "https://wa.me/919104903595?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
 
     instagramHandle: "@ojasvisuals.official",
 
@@ -30,31 +33,8 @@ export const studioData = {
 
     domain: "ojasvisuals.in",
 
-    email: "ojas26@ojasvisuals.in"
+    email: "ojasvisuals26@gmail.com",
   },
-
-  stats: [
-    {
-      label: "Completed Brand Shoots",
-      value: "50+",
-      suffix: ""
-    },
-    {
-      label: "Cumulative Reel Views",
-      value: "8.5M",
-      suffix: "+"
-    },
-    {
-      label: "Client Retention Rate",
-      value: "98%",
-      suffix: ""
-    },
-    {
-      label: "Master Export Quality",
-      value: "4K UHD",
-      suffix: "60fps"
-    }
-  ],
 
   founder: {
     name: "Om Parmar",
@@ -74,24 +54,24 @@ export const studioData = {
     skills: [
       {
         name: "Cinematic Direction",
-        icon: "🎥"
+        icon: "🎥",
       },
       {
         name: "Advanced Video Editing",
-        icon: "⚡"
+        icon: "⚡",
       },
       {
         name: "Color Grading",
-        icon: "🎨"
+        icon: "🎨",
       },
       {
         name: "Sound Design",
-        icon: "🔊"
+        icon: "🔊",
       },
       {
         name: "Viral Reel Strategy",
-        icon: "📱"
-      }
+        icon: "📱",
+      },
     ],
 
     buttons: {
@@ -99,14 +79,14 @@ export const studioData = {
         label: "🔒 Request Direct Line (9104903595)",
 
         url:
-          "https://wa.me/917990102448?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project."
+          "https://wa.me/919104903595?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
       },
 
       work: "#portfolio",
 
       instagram:
-        "https://www.instagram.com/ojasvisuals.official?igsh=MTByamEwMjVnazJ2NQ=="
-    }
+        "https://www.instagram.com/ojasvisuals.official?igsh=MTByamEwMjVnazJ2NQ==",
+    },
   },
 
   team: [
@@ -131,13 +111,13 @@ export const studioData = {
         "⚡ Advanced Video Editing",
         "🎨 Color Grading",
         "🔊 Sound Design",
-        "📱 Viral Reel Strategy"
+        "📱 Viral Reel Strategy",
       ],
 
       contactUrl:
-        "https://wa.me/917990102448?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
+        "https://wa.me/919104903595?text=Hi%20Om,%20I%20would%20like%20to%20request%20your%20direct%20VIP%20line%20(9104903595)%20for%20a%20project.",
 
-      buttonLabel: "🔒 VIP Direct Line (9104903595)"
+      buttonLabel: "🔒 VIP Direct Line (9104903595)",
     },
 
     {
@@ -159,13 +139,13 @@ export const studioData = {
       skills: [
         "🎥 Videography",
         "✂️ Video Editing",
-        "🎨 Motion & Graphic Design"
+        "🎨 Motion & Graphic Design",
       ],
 
       contactUrl:
-        "https://wa.me/917990102448?text=Hi%20Ghanshyam,%20I%20want%20to%20collaborate%20on%20design%20and%20video%20production.",
+        "https://wa.me/919104903595?text=Hi%20Ghanshyam,%20I%20want%20to%20collaborate%20on%20design%20and%20video%20production.",
 
-      buttonLabel: "💬 Connect with Ghanshyam"
+      buttonLabel: "💬 Connect with Ghanshyam",
     },
 
     {
@@ -187,13 +167,13 @@ export const studioData = {
       skills: [
         "📈 Marketing Strategy",
         "🤝 Brand Consulting",
-        "🚀 Client Acquisition"
+        "🚀 Client Acquisition",
       ],
 
       contactUrl:
-        "https://wa.me/917990102448?text=Hi%20Ravi,%20I%20want%20to%20discuss%20brand%20strategy%20and%20marketing%20consulting.",
+        "https://wa.me/919104903595?text=Hi%20Ravi,%20I%20want%20to%20discuss%20brand%20strategy%20and%20marketing%20consulting.",
 
-      buttonLabel: "💬 Connect with Ravi"
+      buttonLabel: "💬 Connect with Ravi",
     },
 
     {
@@ -216,13 +196,13 @@ export const studioData = {
       skills: [
         "🎤 Anchoring",
         "📱 Influencer Content",
-        "✨ Brand Storytelling"
+        "✨ Brand Storytelling",
       ],
 
       contactUrl:
-        "https://wa.me/917990102448?text=Hi%20Divyanshu,%20I%20want%20to%20discuss%20anchoring%20and%20influencer%20collaboration.",
+        "https://wa.me/919104903595?text=Hi%20Divyanshu,%20I%20want%20to%20discuss%20anchoring%20and%20influencer%20collaboration.",
 
-      buttonLabel: "💬 Connect with Divyanshu"
+      buttonLabel: "💬 Connect with Divyanshu",
     },
 
     {
@@ -244,14 +224,42 @@ export const studioData = {
       skills: [
         "💻 Web Development",
         "📱 Responsive Design",
-        "⚡ Modern UI/UX"
+        "⚡ Modern UI/UX",
       ],
 
       contactUrl:
-        "https://wa.me/917990102448?text=Hi%20Harshal,%20I%20want%20to%20discuss%20web%20development%20and%20website%20design.",
+        "https://wa.me/919104903595?text=Hi%20Harshal,%20I%20want%20to%20discuss%20web%20development%20and%20website%20design.",
 
-      buttonLabel: "💬 Connect with Harshal"
-    }
+      buttonLabel: "💬 Connect with Harshal",
+    },
+
+    {
+      id: "smit-metra",
+
+      name: "Smit Metra",
+
+      role: "Photographer",
+
+      specialization: "Photography • Ojas Visuals",
+
+      tag: "📸 Photography Lead",
+
+      tagColor: "gold",
+
+      bio:
+        "Photographer focused on creating professional visual stories through photography, creative composition, lighting, and brand-focused imagery.",
+
+      skills: [
+        "📸 Professional Photography",
+        "💡 Creative Lighting",
+        "🎨 Visual Composition",
+      ],
+
+      contactUrl:
+        "https://wa.me/919104903595?text=Hi%20Smit,%20I%20want%20to discuss photography and visual production with Ojas Visuals.",
+
+      buttonLabel: "💬 Connect with Smit",
+    },
   ],
 
   services: [
@@ -269,13 +277,13 @@ export const studioData = {
         "Dynamic camera angles & gimbal movement",
         "Hook-first pacing for maximum audience retention",
         "9:16 vertical composition for Instagram & YouTube Shorts",
-        "Professional lighting & audio capture"
+        "Professional lighting & audio capture",
       ],
 
       idealFor:
         "Cafés, Boutiques, Restaurants, Personal Brands & Fitness Studios",
 
-      badge: "Most Popular"
+      badge: "Most Popular",
     },
 
     {
@@ -292,13 +300,13 @@ export const studioData = {
         "DaVinci Resolve Studio color grading",
         "Beat-synced cuts & cinematic transitions",
         "Custom motion graphics & animated captions",
-        "Professional sound design & SFX"
+        "Professional sound design & SFX",
       ],
 
       idealFor:
         "Content Creators, E-commerce, Podcasts & Ad Creatives",
 
-      badge: "High Impact"
+      badge: "High Impact",
     },
 
     {
@@ -315,13 +323,13 @@ export const studioData = {
         "Monthly content calendar & strategy",
         "Trend analysis & viral content planning",
         "Engagement optimization",
-        "Performance analytics & reporting"
+        "Performance analytics & reporting",
       ],
 
       idealFor:
         "Brands seeking consistent organic reach and lead generation",
 
-      badge: "Full Retainer"
+      badge: "Full Retainer",
     },
 
     {
@@ -340,14 +348,14 @@ export const studioData = {
         "E-commerce websites",
         "Responsive mobile-first design",
         "Modern React-based development",
-        "Website deployment & hosting setup"
+        "Website deployment & hosting setup",
       ],
 
       idealFor:
         "Businesses, Startups, Creators, Personal Brands & E-commerce",
 
-      badge: "Digital Solutions"
-    }
+      badge: "Digital Solutions",
+    },
   ],
 
   productionGear: [
@@ -356,7 +364,7 @@ export const studioData = {
 
       item: "Sony Cinema Line 4K Alpha Full-Frame",
 
-      desc: "10-bit 4:2:2 S-Log3 dynamic range"
+      desc: "10-bit 4:2:2 S-Log3 dynamic range",
     },
 
     {
@@ -364,7 +372,7 @@ export const studioData = {
 
       item: "Sony G-Master Fast Primes (24mm, 50mm, 85mm)",
 
-      desc: "f/1.4 cinematic bokeh & macro sharpness"
+      desc: "f/1.4 cinematic bokeh & macro sharpness",
     },
 
     {
@@ -372,7 +380,7 @@ export const studioData = {
 
       item: "DJI Ronin RS Pro Gimbal System",
 
-      desc: "Silky 3-axis tracking and vertical mount"
+      desc: "Silky 3-axis tracking and vertical mount",
     },
 
     {
@@ -380,7 +388,7 @@ export const studioData = {
 
       item: "Aputure & Godox Studio LED Rig",
 
-      desc: "Softboxes, RGB rim lights & daylight spots"
+      desc: "Softboxes, RGB rim lights & daylight spots",
     },
 
     {
@@ -388,7 +396,7 @@ export const studioData = {
 
       item: "Rode Wireless PRO & DaVinci Resolve Studio",
 
-      desc: "32-bit float audio & studio color grading"
+      desc: "32-bit float audio & studio color grading",
     },
 
     {
@@ -397,8 +405,8 @@ export const studioData = {
       item: "iPhone Pro",
 
       desc:
-        "4K cinematic video, ProRes recording & professional mobile production"
-    }
+        "4K cinematic video, ProRes recording & professional mobile production",
+    },
   ],
 
   faqs: [
@@ -406,35 +414,35 @@ export const studioData = {
       q: "Where is Ojas Visuals based, and do you travel for shoots?",
 
       a:
-        "We are based in Ahmedabad, Gujarat, India. We actively travel across Gujarat (Surat, Vadodara, Rajkot) and throughout India for destination commercial and brand shoots."
+        "We are based in Ahmedabad, Gujarat, India. We actively travel across Gujarat (Surat, Vadodara, Rajkot) and throughout India for destination commercial and brand shoots.",
     },
 
     {
       q: "Do you also develop websites?",
 
       a:
-        "Yes. Ojas Visuals provides modern website development for businesses, startups, creators, personal brands, portfolios, and e-commerce brands. We handle responsive design, development, deployment, and hosting setup."
+        "Yes. Ojas Visuals provides modern website development for businesses, startups, creators, personal brands, portfolios, and e-commerce brands. We handle responsive design, development, deployment, and hosting setup.",
     },
 
     {
       q: "What is your typical turnaround time for vertical reels?",
 
       a:
-        "Our standard turnaround time is 48 to 72 hours for first cuts. We also offer 24-hour rush delivery for high-priority product launches and event reels."
+        "Our standard turnaround time is 48 to 72 hours for first cuts. We also offer 24-hour rush delivery for high-priority product launches and event reels.",
     },
 
     {
       q: "Do you provide raw footage along with the final edited video?",
 
       a:
-        "Yes! All client deliverables include master 4K UHD video exports optimized for social media, and full raw footage archives can be made available through our Client Vault."
+        "Yes! All client deliverables include master 4K UHD video exports optimized for social media, and full raw footage archives can be made available through our Client Vault.",
     },
 
     {
       q: "How does the Client Review Vault work?",
 
       a:
-        "Clients receive a dedicated passcode (e.g. ojas2026) to log into our private cloud portal, where they can preview rough cuts, drop timestamped notes, and download master files."
-    }
-  ]
+        "Clients receive a dedicated passcode (e.g. ojas2026) to log into our private cloud portal, where they can preview rough cuts, drop timestamped notes, and download master files.",
+    },
+  ],
 };

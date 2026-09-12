@@ -1,10 +1,13 @@
 import React from 'react';
 import { studioData } from '../../data/content';
+
 import founderImg from '../../assets/images/founder_om_parmar.jpg';
 import ghanshyamImg from '../../assets/images/ghanshyam_patel.png';
 import raviImg from '../../assets/images/ravi_panchal.png';
 import divyanshuImg from '../../assets/images/divyanshu_upadhyay.jpeg';
 import harshalImg from '../../assets/images/harshal_patil.jpeg';
+import smitImg from '../../assets/images/smit_metra.jpg';
+
 import {
   MessageSquare,
   Instagram,
@@ -24,18 +27,30 @@ export const FounderSection = () => {
       ========================================= */}
       <div className="text-center mb-16">
 
-        <div data-reveal className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-5">
+        <div
+          data-reveal
+          className="inline-block bg-gold-primary/10 border border-gold-primary/30 text-gold-light text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-5"
+        >
           The Minds Behind Ojas Visuals
         </div>
 
-        <h2 data-reveal data-reveal-delay="80" className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4">
+        <h2
+          data-reveal
+          data-reveal-delay="80"
+          className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-slate-100 mb-4"
+        >
           Leadership &amp; Core Creative Team
         </h2>
 
-        <p data-reveal data-reveal-delay="140" className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+        <p
+          data-reveal
+          data-reveal-delay="140"
+          className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto"
+        >
           A multidisciplinary team combining cinematic production, creative
-          strategy, marketing, influencer presence, and modern web development
-          to build powerful digital experiences for ambitious brands.
+          strategy, marketing, influencer presence, photography, and modern
+          web development to build powerful digital experiences for ambitious
+          brands.
         </p>
 
       </div>
@@ -44,12 +59,16 @@ export const FounderSection = () => {
       {/* ========================================
           FOUNDER — OM PARMAR
       ========================================= */}
-      <div data-reveal="scale" className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 rounded-3xl bg-gradient-to-br from-dark-800/95 via-dark-700/70 to-dark-800/95 border border-gold-primary/30 shadow-2xl shadow-black/70 relative overflow-hidden mb-12">
+      <div
+        data-reveal="scale"
+        className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 rounded-3xl bg-gradient-to-br from-dark-800/95 via-dark-700/70 to-dark-800/95 border border-gold-primary/30 shadow-2xl shadow-black/70 relative overflow-hidden mb-12"
+      >
 
         <div className="absolute top-0 right-0 w-48 h-48 bg-gold-primary/10 rounded-full blur-3xl pointer-events-none" />
 
         {/* Om's Image */}
         <div className="lg:col-span-5 relative group">
+
           <div
             data-cursor="FOUNDER"
             className="relative rounded-2xl overflow-hidden border-2 border-gold-primary/40 shadow-2xl shadow-gold-primary/20 aspect-[3/4] max-h-[500px] w-full mx-auto bg-dark-900"
@@ -77,6 +96,7 @@ export const FounderSection = () => {
             </div>
 
           </div>
+
         </div>
 
 
@@ -84,6 +104,7 @@ export const FounderSection = () => {
         <div className="lg:col-span-7 flex flex-col justify-center space-y-6">
 
           <div>
+
             <h3 className="font-heading text-3xl sm:text-4xl font-extrabold text-slate-100 mb-1">
               {founder.name}
             </h3>
@@ -98,12 +119,12 @@ export const FounderSection = () => {
                 •
               </span>
 
-              {/* Updated Om Role */}
               <span className="text-slate-200">
                 Videographer | Editor | Marketing Head | Web Developer
               </span>
 
             </div>
+
           </div>
 
 
@@ -135,6 +156,7 @@ export const FounderSection = () => {
                   key={index}
                   className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-dark-700/90 hover:bg-dark-600 border border-gold-primary/20 hover:border-gold-primary/50 text-slate-200 text-xs font-medium transition-all"
                 >
+
                   <span>
                     {skill.icon}
                   </span>
@@ -142,6 +164,7 @@ export const FounderSection = () => {
                   <span>
                     {skill.name}
                   </span>
+
                 </span>
               ))}
 
@@ -164,7 +187,6 @@ export const FounderSection = () => {
               </span>
             </a>
 
-
             <a
               href="#portfolio"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-dark-700/80 hover:bg-dark-600 border border-slate-700 hover:border-gold-primary/40 text-slate-200 text-xs sm:text-sm font-semibold transition-all"
@@ -173,7 +195,6 @@ export const FounderSection = () => {
                 View Work
               </span>
             </a>
-
 
             <a
               href={founder.buttons.instagram}
@@ -204,9 +225,16 @@ export const FounderSection = () => {
         {/* ========================================
             GHANSHYAM PATEL
         ========================================= */}
-        <div data-reveal="scale" data-reveal-delay="0" className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-gold-primary/20 hover:border-gold-primary/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
+        <div
+          data-reveal="scale"
+          data-reveal-delay="0"
+          className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-gold-primary/20 hover:border-gold-primary/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group"
+        >
 
-          <div data-cursor="VIEW" className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-gold-primary/30 shadow-lg shadow-gold-primary/10 group-hover:scale-105 transition-transform bg-dark-900">
+          <div
+            data-cursor="VIEW"
+            className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-gold-primary/30 shadow-lg shadow-gold-primary/10 group-hover:scale-105 transition-transform bg-dark-900"
+          >
 
             <img
               src={ghanshyamImg}
@@ -221,7 +249,6 @@ export const FounderSection = () => {
 
           </div>
 
-
           <h3 className="font-heading text-2xl font-bold text-slate-100 mb-1">
             Ghanshyam Patel
           </h3>
@@ -235,7 +262,6 @@ export const FounderSection = () => {
             stories. Delivering high-impact visuals, precision video editing,
             and modern graphics design.
           </p>
-
 
           <div className="flex flex-wrap justify-center gap-2 mb-6">
 
@@ -253,18 +279,19 @@ export const FounderSection = () => {
 
           </div>
 
-
           <a
-            href="https://wa.me/917990102448?text=Hi%20Ghanshyam,%20I%20want%20to%20collaborate%20on%20design%20and%20video%20production."
+            href="https://wa.me/919104903595?text=Hi%20Ghanshyam,%20I%20want%20to%20collaborate%20on%20design%20and%20video%20production."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs flex items-center justify-center gap-2 py-3 rounded-xl bg-dark-700/80 hover:bg-gold-primary hover:text-black text-slate-200 text-xs font-bold border border-slate-700 transition-all"
           >
+
             <MessageSquare className="w-3.5 h-3.5" />
 
             <span>
               💬 Connect with Ghanshyam
             </span>
+
           </a>
 
         </div>
@@ -273,9 +300,16 @@ export const FounderSection = () => {
         {/* ========================================
             RAVI PANCHAL
         ========================================= */}
-        <div data-reveal="scale" data-reveal-delay="90" className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-cyan-500/20 hover:border-cyan-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
+        <div
+          data-reveal="scale"
+          data-reveal-delay="90"
+          className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-cyan-500/20 hover:border-cyan-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group"
+        >
 
-          <div data-cursor="VIEW" className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-cyan-500/30 shadow-lg shadow-cyan-500/10 group-hover:scale-105 transition-transform bg-dark-900">
+          <div
+            data-cursor="VIEW"
+            className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-cyan-500/30 shadow-lg shadow-cyan-500/10 group-hover:scale-105 transition-transform bg-dark-900"
+          >
 
             <img
               src={raviImg}
@@ -290,7 +324,6 @@ export const FounderSection = () => {
 
           </div>
 
-
           <h3 className="font-heading text-2xl font-bold text-slate-100 mb-1">
             Ravi Panchal
           </h3>
@@ -304,7 +337,6 @@ export const FounderSection = () => {
             the next era. Focused on full-funnel marketing management, client
             acquisition, and advisory.
           </p>
-
 
           <div className="flex flex-wrap justify-center gap-2 mb-6">
 
@@ -322,18 +354,19 @@ export const FounderSection = () => {
 
           </div>
 
-
           <a
-            href="https://wa.me/917990102448?text=Hi%20Ravi,%20I%20want%20to%20discuss%20brand%20strategy%20and%20marketing%20consulting."
+            href="https://wa.me/919104903595?text=Hi%20Ravi,%20I%20want%20to%20discuss%20brand%20strategy%20and%20marketing%20consulting."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs flex items-center justify-center gap-2 py-3 rounded-xl bg-dark-700/80 hover:bg-cyan-500 hover:text-black text-slate-200 text-xs font-bold border border-slate-700 transition-all"
           >
+
             <MessageSquare className="w-3.5 h-3.5" />
 
             <span>
               💬 Connect with Ravi
             </span>
+
           </a>
 
         </div>
@@ -342,9 +375,16 @@ export const FounderSection = () => {
         {/* ========================================
             DIVYANSHU UPADHYAY
         ========================================= */}
-        <div data-reveal="scale" data-reveal-delay="0" className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-pink-500/20 hover:border-pink-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
+        <div
+          data-reveal="scale"
+          data-reveal-delay="0"
+          className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-pink-500/20 hover:border-pink-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group"
+        >
 
-          <div data-cursor="VIEW" className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-pink-500/30 shadow-lg shadow-pink-500/10 group-hover:scale-105 transition-transform bg-dark-900">
+          <div
+            data-cursor="VIEW"
+            className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-pink-500/30 shadow-lg shadow-pink-500/10 group-hover:scale-105 transition-transform bg-dark-900"
+          >
 
             <img
               src={divyanshuImg}
@@ -359,7 +399,6 @@ export const FounderSection = () => {
 
           </div>
 
-
           <h3 className="font-heading text-2xl font-bold text-slate-100 mb-1">
             Divyanshu Upadhyay
           </h3>
@@ -373,7 +412,6 @@ export const FounderSection = () => {
             the next era. Focused on impactful storytelling, audience
             engagement, and creating memorable brand experiences.
           </p>
-
 
           <div className="flex flex-wrap justify-center gap-2 mb-6">
 
@@ -391,18 +429,19 @@ export const FounderSection = () => {
 
           </div>
 
-
           <a
-            href="https://wa.me/917990102448?text=Hi%20Divyanshu,%20I%20want%20to%20discuss%20anchoring%20and%20influencer%20collaboration."
+            href="https://wa.me/919104903595?text=Hi%20Divyanshu,%20I%20want%20to%20discuss%20anchoring%20and%20influencer%20collaboration."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs flex items-center justify-center gap-2 py-3 rounded-xl bg-dark-700/80 hover:bg-pink-500 hover:text-black text-slate-200 text-xs font-bold border border-slate-700 transition-all"
           >
+
             <MessageSquare className="w-3.5 h-3.5" />
 
             <span>
               💬 Connect with Divyanshu
             </span>
+
           </a>
 
         </div>
@@ -411,9 +450,16 @@ export const FounderSection = () => {
         {/* ========================================
             HARSHAL PATIL
         ========================================= */}
-        <div data-reveal="scale" data-reveal-delay="90" className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-blue-500/20 hover:border-blue-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group">
+        <div
+          data-reveal="scale"
+          data-reveal-delay="90"
+          className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-blue-500/20 hover:border-blue-400/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group"
+        >
 
-          <div data-cursor="VIEW" className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-blue-500/30 shadow-lg shadow-blue-500/10 group-hover:scale-105 transition-transform bg-dark-900">
+          <div
+            data-cursor="VIEW"
+            className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-blue-500/30 shadow-lg shadow-blue-500/10 group-hover:scale-105 transition-transform bg-dark-900"
+          >
 
             <img
               src={harshalImg}
@@ -427,7 +473,6 @@ export const FounderSection = () => {
             </div>
 
           </div>
-
 
           <h3 className="font-heading text-2xl font-bold text-slate-100 mb-1">
             Harshal Patil
@@ -443,7 +488,6 @@ export const FounderSection = () => {
             experiences, modern web development, and brand-focused digital
             solutions.
           </p>
-
 
           <div className="flex flex-wrap justify-center gap-2 mb-6">
 
@@ -461,18 +505,94 @@ export const FounderSection = () => {
 
           </div>
 
-
           <a
-            href="https://wa.me/917990102448?text=Hi%20Harshal,%20I%20want%20to%20discuss%20web%20development%20and%20website%20design."
+            href="https://wa.me/919104903595?text=Hi%20Harshal,%20I%20want%20to%20discuss%20web%20development%20and%20website%20design."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full max-w-xs flex items-center justify-center gap-2 py-3 rounded-xl bg-dark-700/80 hover:bg-blue-500 hover:text-black text-slate-200 text-xs font-bold border border-slate-700 transition-all"
           >
+
             <MessageSquare className="w-3.5 h-3.5" />
 
             <span>
               💬 Connect with Harshal
             </span>
+
+          </a>
+
+        </div>
+
+
+        {/* ========================================
+            SMIT METRA
+        ========================================= */}
+        <div
+          data-reveal="scale"
+          data-reveal-delay="0"
+          className="p-8 rounded-3xl bg-gradient-to-b from-dark-800/90 to-dark-900 border border-gold-primary/20 hover:border-gold-primary/50 shadow-xl shadow-black/50 transition-all duration-300 flex flex-col items-center text-center relative group"
+        >
+
+          <div
+            data-cursor="VIEW"
+            className="relative w-36 h-48 rounded-2xl overflow-hidden mb-6 border-2 border-gold-primary/30 shadow-lg shadow-gold-primary/10 group-hover:scale-105 transition-transform bg-dark-900"
+          >
+
+            <img
+              src={smitImg}
+              alt="Smit Metra - Photographer at Ojas Visuals"
+              className="w-full h-full object-cover object-center"
+              loading="lazy"
+            />
+
+            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-dark-900/90 px-3 py-0.5 rounded-full border border-gold-primary text-[10px] font-bold text-gold-light whitespace-nowrap shadow">
+              📸 Photography Lead
+            </div>
+
+          </div>
+
+          <h3 className="font-heading text-2xl font-bold text-slate-100 mb-1">
+            Smit Metra
+          </h3>
+
+          <p className="text-gold-light text-xs font-semibold tracking-wide mb-3">
+            Photographer
+          </p>
+
+          <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6 max-w-md">
+            Photographer focused on creating professional visual stories
+            through photography, creative composition, lighting, and
+            brand-focused imagery.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-2 mb-6">
+
+            <span className="px-3 py-1 rounded-full bg-dark-700/80 border border-gold-primary/30 text-gold-light text-xs font-medium">
+              📸 Professional Photography
+            </span>
+
+            <span className="px-3 py-1 rounded-full bg-dark-700/80 border border-gold-primary/30 text-gold-light text-xs font-medium">
+              💡 Creative Lighting
+            </span>
+
+            <span className="px-3 py-1 rounded-full bg-dark-700/80 border border-gold-primary/30 text-gold-light text-xs font-medium">
+              🎨 Visual Composition
+            </span>
+
+          </div>
+
+          <a
+            href="https://wa.me/919104903595?text=Hi%20Smit,%20I%20want%20to%20discuss%20photography%20and%20visual%20production%20with%20Ojas%20Visuals."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full max-w-xs flex items-center justify-center gap-2 py-3 rounded-xl bg-dark-700/80 hover:bg-gold-primary hover:text-black text-slate-200 text-xs font-bold border border-slate-700 transition-all"
+          >
+
+            <MessageSquare className="w-3.5 h-3.5" />
+
+            <span>
+              💬 Connect with Smit
+            </span>
+
           </a>
 
         </div>

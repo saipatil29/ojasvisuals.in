@@ -26,7 +26,10 @@ export const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        <div data-reveal className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div
+          data-reveal
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12"
+        >
 
           {/* =====================================================
               COLUMN 1 — BRAND
@@ -159,11 +162,11 @@ export const Footer = () => {
               </li>
 
               <li className="text-slate-300">
-                ⚡ DaVinci Color Grading & SFX
+                ⚡ DaVinci Color Grading &amp; SFX
               </li>
 
               <li className="text-slate-300">
-                📈 Social Media Growth & Content Retainers
+                📈 Social Media Growth &amp; Content Retainers
               </li>
 
               <li className="text-slate-300">
@@ -175,7 +178,7 @@ export const Footer = () => {
               </li>
 
               <li className="text-slate-300">
-                🛒 E-commerce & Digital Experiences
+                🛒 E-commerce &amp; Digital Experiences
               </li>
 
             </ul>
@@ -194,22 +197,43 @@ export const Footer = () => {
 
             <div className="space-y-2.5 text-sm">
 
-              {/* Phone */}
+              {/* =================================================
+                  PHONE 1
+              ================================================= */}
               <a
-                href={`tel:${studioData.contact.phoneRaw}`}
+                href="tel:+917990102448"
                 className="flex items-center gap-2 text-slate-300 hover:text-gold-light transition-colors"
               >
 
                 <Phone className="w-4 h-4 text-gold-primary" />
 
                 <span>
-                  {studioData.contact.phone}
+                  +91 7990102448
                 </span>
 
               </a>
 
 
-              {/* Email */}
+              {/* =================================================
+                  PHONE 2
+              ================================================= */}
+              <a
+                href="tel:+919104903595"
+                className="flex items-center gap-2 text-slate-300 hover:text-gold-light transition-colors"
+              >
+
+                <Phone className="w-4 h-4 text-gold-primary" />
+
+                <span>
+                  +91 9104903595
+                </span>
+
+              </a>
+
+
+              {/* =================================================
+                  EMAIL
+              ================================================= */}
               <a
                 href={`mailto:${studioData.contact.email}`}
                 className="flex items-center gap-2 text-slate-300 hover:text-gold-light transition-colors"
@@ -224,7 +248,9 @@ export const Footer = () => {
               </a>
 
 
-              {/* Website */}
+              {/* =================================================
+                  WEBSITE
+              ================================================= */}
               <div className="flex items-center gap-2 text-slate-300">
 
                 <Globe className="w-4 h-4 text-gold-primary" />
@@ -238,7 +264,9 @@ export const Footer = () => {
             </div>
 
 
-            {/* Social Buttons */}
+            {/* ===================================================
+                SOCIAL BUTTONS
+            ==================================================== */}
             <div className="flex items-center gap-3 pt-2">
 
               {/* Instagram */}
@@ -249,7 +277,9 @@ export const Footer = () => {
                 className="p-2.5 rounded-xl bg-dark-800 border border-slate-700 text-pink-400 hover:text-white hover:bg-pink-600 hover:scale-110 hover:border-pink-500 transition-all"
                 aria-label="Instagram Profile"
               >
+
                 <Instagram className="w-4 h-4" />
+
               </a>
 
 
@@ -261,7 +291,9 @@ export const Footer = () => {
                 className="p-2.5 rounded-xl bg-dark-800 border border-slate-700 text-whatsapp-green hover:text-white hover:bg-whatsapp-green hover:scale-110 hover:border-whatsapp-green transition-all"
                 aria-label="WhatsApp Message"
               >
+
                 <MessageSquare className="w-4 h-4" />
+
               </a>
 
             </div>
@@ -287,7 +319,7 @@ export const Footer = () => {
             . All Rights Reserved. •{' '}
 
             <span className="text-slate-300 font-semibold">
-              Creative Production & Web Development Studio
+              Creative Production &amp; Web Development Studio
             </span>
 
           </p>
