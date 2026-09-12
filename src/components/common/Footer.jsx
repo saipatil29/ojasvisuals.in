@@ -187,7 +187,7 @@ export const Footer = () => {
 
 
           {/* =====================================================
-              COLUMN 4 — CONTACT
+              COLUMN 4 — DIRECT CONTACT
           ====================================================== */}
           <div className="space-y-4">
 
@@ -198,14 +198,16 @@ export const Footer = () => {
             <div className="space-y-2.5 text-sm">
 
               {/* =================================================
-                  PHONE 1
+                  WHATSAPP NUMBER
               ================================================= */}
               <a
-                href="tel:+917990102448"
+                href="https://wa.me/917990102448"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-slate-300 hover:text-gold-light transition-colors"
               >
 
-                <Phone className="w-4 h-4 text-gold-primary" />
+                <MessageSquare className="w-4 h-4 text-whatsapp-green" />
 
                 <span>
                   +91 7990102448
@@ -215,7 +217,7 @@ export const Footer = () => {
 
 
               {/* =================================================
-                  PHONE 2
+                  PHONE NUMBER
               ================================================= */}
               <a
                 href="tel:+919104903595"
@@ -285,7 +287,7 @@ export const Footer = () => {
 
               {/* WhatsApp */}
               <a
-                href={studioData.contact.whatsappUrl}
+                href="https://wa.me/917990102448"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-xl bg-dark-800 border border-slate-700 text-whatsapp-green hover:text-white hover:bg-whatsapp-green hover:scale-110 hover:border-whatsapp-green transition-all"
